@@ -44,23 +44,9 @@ See me [live!](https://sovanp.github.io)
 
 ### Credits
 
-- Star Wars icons: https://icons8.com/icons/
 - Using Context API with Gatsby: https://www.gatsbyjs.org/blog/2019-01-31-using-react-context-api-with-gatsby/
 - SEO with Gatsby: https://gregberge.com/blog/gatsby-seo
 - Gatsby: https://www.gatsbyjs.org/docs/
-
-### Lighthouse screenshots
-
-![Test 1](./assets/test-1.png)
-![Test 2](./assets/test-2.png)
-
-### App Screenshots
-
-Light Mode\
-<img src="./assets/light-mode.png" alt="Light Mode" width="700">
-<br><br>
-Dark Mode\
-<img src="./assets/dark-mode.png" alt="Dark Mode" width="700">
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
