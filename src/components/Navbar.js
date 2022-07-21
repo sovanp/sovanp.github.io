@@ -49,8 +49,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
-              b
-              href="/"
+              href="https://www.linkedin.com/in/sovan-patnayak/"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -58,8 +57,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333]">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
-              b
-              href="/"
+              href="https://github.com/sovanp"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -67,8 +65,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
-              b
-              href="/"
+              href="mailto: sovanpatnayak@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -76,8 +73,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
-              b
-              href="/"
+              href="/home/spatnayak/personal/sovanp/src/assets/sp-resume-W22-v2.pdf"
+              download="sovan-patnayak-resume.pdf"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
