@@ -16,11 +16,21 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li className="hover:text-[#64ffda]">
+          <span className="text-[#64ffda]">0.1</span> Home
+        </li>
+        <li className="hover:text-[#64ffda]">
+          <span className="text-[#64ffda]">0.2</span> About
+        </li>
+        <li className="hover:text-[#64ffda]">
+          <span className="text-[#64ffda]">0.3</span> Experience
+        </li>
+        <li className="hover:text-[#64ffda]">
+          <span className="text-[#64ffda]">0.4</span> Work
+        </li>
+        <li className="hover:text-[#64ffda]">
+          <span className="text-[#64ffda]">0.5</span> Contact
+        </li>
       </ul>
 
       {/* Bar Menu */}
@@ -36,17 +46,27 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Experience</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <span className="text-[#64ffda]">0.1</span> Home
+        </li>
+        <li className="py-6 text-4xl">
+          <span className="text-[#64ffda]">0.2</span> About
+        </li>
+        <li className="py-6 text-4xl">
+          <span className="text-[#64ffda]">0.3</span> Experience
+        </li>
+        <li className="py-6 text-4xl">
+          <span className="text-[#64ffda]">0.4</span> Work
+        </li>
+        <li className="py-6 text-4xl">
+          <span className="text-[#64ffda]">0.5</span> Contact
+        </li>
       </ul>
 
       {/* Social Icons */}
       <div className="flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1] border-color rounded-t-md">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
               href="https://www.linkedin.com/in/sovan-patnayak/"
@@ -70,10 +90,12 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] border-color rounded-b-md">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
               href="/home/spatnayak/personal/sovanp/src/assets/sp-resume-W22-v2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               download="sovan-patnayak-resume.pdf"
             >
               Resume <BsFillPersonLinesFill size={30} />

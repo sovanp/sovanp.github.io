@@ -21,7 +21,7 @@ export const Home = () => {
           <span className="text-[#64ffda]"> University of Waterloo</span>.
         </p>
         <div>
-          <button className="text-[#ccd6f6] group border-2 px-6 py-3 my-2 flex items-center hover:text-[#64ffda] hover:border-[#64ffda]">
+          <button className="text-[#ccd6f6] group border-2 px-6 rounded-md py-3 my-2 flex items-center hover:text-[#64ffda] hover:border-[#64ffda]">
             Check out my work!
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />{" "}
