@@ -17,19 +17,19 @@ const Navbar = () => {
       {/* Menu */}
       <ul className="hidden md:flex">
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda]">0.1</span> Home
+          <span className="text-[#64ffda] mr-2 slashed-zero">0.1</span> Home
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda]">0.2</span> About
+          <span className="text-[#64ffda] mr-2">0.2</span> About
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda]">0.3</span> Experience
+          <span className="text-[#64ffda] mr-2">0.3</span> Experience
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda]">0.4</span> Work
+          <span className="text-[#64ffda] mr-2">0.4</span> Work
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda]">0.5</span> Contact
+          <span className="text-[#64ffda] mr-2">0.5</span> Contact
         </li>
       </ul>
 
@@ -47,19 +47,19 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda]">0.1</span> Home
+          <span className="text-[#64ffda] mr-2">0.1</span> Home
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda]">0.2</span> About
+          <span className="text-[#64ffda] mr-2">0.2</span> About
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda]">0.3</span> Experience
+          <span className="text-[#64ffda] mr-2">0.3</span> Experience
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda]">0.4</span> Work
+          <span className="text-[#64ffda] mr-2">0.4</span> Work
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda]">0.5</span> Contact
+          <span className="text-[#64ffda] mr-2">0.5</span> Contact
         </li>
       </ul>
 
