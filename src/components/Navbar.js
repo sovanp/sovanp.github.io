@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import Logo from "../assets/sovan-logo.png"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -15,21 +16,31 @@ const Navbar = () => {
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex text-sm">
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda] mr-2 slashed-zero">0.1</span> Home
+          <Link to="home" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">01.</span> Home
+          </Link>
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda] mr-2">0.2</span> About
+          <Link to="about" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">02.</span> About
+          </Link>
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda] mr-2">0.3</span> Experience
+          <Link to="experience" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">03.</span> Experience
+          </Link>
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda] mr-2">0.4</span> Work
+          <Link to="work" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">04.</span> Work
+          </Link>
         </li>
         <li className="hover:text-[#64ffda]">
-          <span className="text-[#64ffda] mr-2">0.5</span> Contact
+          <Link to="contact" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">05.</span> Contact
+          </Link>
         </li>
       </ul>
 
@@ -47,19 +58,29 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda] mr-2">0.1</span> Home
+          <Link to="home" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">01.</span> Home
+          </Link>
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda] mr-2">0.2</span> About
+          <Link to="about" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">02.</span> About
+          </Link>
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda] mr-2">0.3</span> Experience
+          <Link to="experience" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">03.</span> Experience
+          </Link>
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda] mr-2">0.4</span> Work
+          <Link to="work" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">04.</span> Work
+          </Link>
         </li>
         <li className="py-6 text-4xl">
-          <span className="text-[#64ffda] mr-2">0.5</span> Contact
+          <Link to="contact" smooth={true} duration={500}>
+            <span className="text-[#64ffda]">05.</span> Contact
+          </Link>
         </li>
       </ul>
 
