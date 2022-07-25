@@ -8,14 +8,17 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-left pb-8 pl-4">
             <p className="text-4xl font-bold">
-              <span class="text-[#64ffda] mr-2">01.</span> About Me
+              <span class="text-[#64ffda]">01.</span> About Me
             </p>
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 text-[#8892b0]">
           <div className="sm:text-left leading-relaxed">
             <p className="mb-3">
-              Hi, I'm Sovan. Nice to meet you! Feel free to look around!
+              Hello! My name is Sovan and I love technology. The colossal amount
+              of complexity, intricacy and profundity it adds to human life
+              fascinates me. I have always been passionate about technology as a
+              tool to improve human life.
             </p>
             <p className="mb-3">
               Lorem ipsum dolor sit amet, elit. Assumenda aut commodi culpa
