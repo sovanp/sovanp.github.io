@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div name="about" className="w-full h-screen bg-[#0a192f] text-[#ccd6f6]">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
+        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-10">
           <div className="sm:text-left pb-8 pl-4">
             <p className="text-4xl font-bold">
               <span class="text-[#64ffda]">01.</span> About Me
@@ -21,23 +21,52 @@ const About = () => {
               tool to improve human life.
             </p>
             <p className="mb-3">
-              Lorem ipsum dolor sit amet, elit. Assumenda aut commodi culpa
-              debitis dolores ducimus, ea eos inventore.
-            </p>
-            <p className="mb-3">
-              Lorem ipsum dolor sit amet, elit. Assumenda aut commodi culpa
-              debitis dolores ducimus, ea eos inventore.
-            </p>
-            <p className="mb-3">
-              Lorem, Accusamus alias at{" "}
-              <a href="/" className="text-[#64ffda] font-medium">
-                deleniti deserunt dolores
-              </a>{" "}
-              dolorum eum incidunt minus molestias{" "}
-              <a href="/" className="text-[#64ffda] font-medium">
-                pariatur possimus praesentium quae
+              I'm a Computer Engineering student at the{" "}
+              <a
+                href="https://uwaterloo.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#64ffda] font-medium no-underline hover:underline"
+              >
+                University of Waterloo
               </a>
-              , quos soluta voluptas! Amet atque
+              . Over the past few years, I've had the privilege of working at{" "}
+              <a
+                href="https://www.bmo.com/main/about-bmo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#64ffda] font-medium no-underline hover:underline"
+              >
+                BMO Financial Group
+              </a>
+              ,{" "}
+              <a
+                href="https://www.sunlife.ca/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#64ffda] font-medium no-underline hover:underline"
+              >
+                Sun Life
+              </a>
+              , and{" "}
+              <a
+                href="https://www.ea.com/en-ca"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#64ffda] font-medium no-underline hover:underline"
+              >
+                Electronic Arts (EA)
+              </a>
+              . Currently, I'm a full-stack Software Engineer at{" "}
+              <a
+                href="https://placeholder.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#64ffda] font-medium no-underline hover:underline"
+              >
+                PlaceHolder Inc.
+              </a>{" "}
+              working on building and designing accessible microservices.
             </p>
             <p className="mb-3">
               Here are a few technologies I've been working with recently:
@@ -82,12 +111,12 @@ const About = () => {
             </div>
           </div>
           <div>
-            <div class="w-3/4 flex justify-center">
+            <div class="w-4/6 flex justify-center">
               <div class="border-2 border-[#64ffda] rounded-md">
                 <img
                   src={Profile}
                   alt="Profile"
-                  className="-mt-6 -ml-6 mb-6 mr-6 w-full h-auto rounded-md object-cover aspect-square hover:scale-105 transition duration-200 ease-in-out"
+                  className="-mt-5 -ml-5 mb-5 mr-5 w-full h-auto rounded-md object-cover aspect-square hover:scale-105 transition duration-200 ease-in-out"
                 />
               </div>
             </div>
