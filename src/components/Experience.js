@@ -7,7 +7,7 @@ const Experience = () => {
       className="w-full h-screen bg-[#0a192f] text-[#ccd6f6]"
     >
       {/* Page Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         {/* Offset the Exerpience Container from Center */}
         <div className="w-full sm:w-2/3">
           <p className="text-4xl font-bold mb-8">
