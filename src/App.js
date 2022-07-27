@@ -1,7 +1,7 @@
 import About from "./components/About"
 import { Home } from "./components/Home"
 import Navbar from "./components/Navbar"
-import Skills from "./components/Experience"
+import Experience from "./components/Experience"
 import Work from "./components/Work"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Skills />
+      <Experience />
       <Work />
     </div>
   )

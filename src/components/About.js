@@ -8,7 +8,7 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-10">
           <div className="sm:text-left pb-8 pl-4">
             <p className="text-4xl font-bold">
-              <span class="text-[#64ffda]">01.</span> About Me
+              <span class="text-[#64ffda]">02.</span> About Me
             </p>
           </div>
         </div>
@@ -73,45 +73,33 @@ const About = () => {
             </p>
             <div className="flex flex-wrap">
               <p className="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 C++
               </p>
               <p className="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 Go
               </p>
               <p className="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 JavaScript
               </p>
               <p className="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 Python
               </p>
               <p class="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 Tailwind CSS
               </p>
               <p class="w-1/2 sm:w-2/5">
-                <span className="font-black text-[#64ffda] text-xs mr-3">
-                  &gt;
-                </span>
+                <span className="text-[#64ffda] text-xs mr-3">&gt;</span>
                 SQL
               </p>
             </div>
           </div>
           <div>
-            <div class="w-4/6 flex justify-center">
+            <div class="w-4/6 flex justify-center ml-8">
               <div class="border-2 border-[#64ffda] rounded-md">
                 <img
                   src={Profile}
