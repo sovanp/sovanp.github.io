@@ -4,6 +4,7 @@ import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import Logo from "../assets/sovan-logo.png"
 import { Link } from "react-scroll"
+import Resume from "../assets/sp-resume-W22-v2.pdf"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -91,6 +92,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
               href="https://www.linkedin.com/in/sovan-patnayak/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -99,6 +102,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
               href="https://github.com/sovanp"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -114,7 +119,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] border-color rounded-b-md">
             <a
               className="flex justify-between items-center w-full text-[#ccd6f6]"
-              href="/home/spatnayak/personal/sovanp/src/assets/sp-resume-W22-v2.pdf"
+              href={Resume}
               target="_blank"
               rel="noopener noreferrer"
               download="sovan-patnayak-resume.pdf"
