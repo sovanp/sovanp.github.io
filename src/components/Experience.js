@@ -1,277 +1,144 @@
 import React from "react"
 
+const experiences = [
+  {
+    id: "placeholder",
+    company: "Placeholder",
+    position: "Software Engineer",
+    period: "May - September 2022",
+    website: "https://placeholder.co/",
+    tasks: [
+      "Designed, implemented and debugged core software components",
+      "Authored and deployed unit tests and other automated software tests",
+      "Collaborated with team members to gather requirements for new/existing features",
+      "Participated in architecture, design and code reviews",
+    ],
+  },
+  {
+    id: "ea",
+    company: "Electronic Arts",
+    position: "Software Quality Engineer",
+    period: "January - April 2022",
+    website: "https://www.ea.com/",
+    tasks: [
+      "Developed and maintained game features for AAA titles",
+      "Implemented game mechanics and systems using C++ and Unreal Engine",
+      "Collaborated with artists, designers, and producers to create high-quality game experiences",
+      "Optimized performance and resolved technical issues",
+    ],
+  },
+  {
+    id: "sunlife",
+    company: "Sun Life",
+    position: "Software Architect",
+    period: "May - August 2021",
+    website: "https://www.sunlife.com/",
+    tasks: [
+      "Developed and maintained web applications using JavaScript, React, and Node.js",
+      "Implemented responsive designs for mobile and desktop devices",
+      "Collaborated with cross-functional teams to gather requirements and create user-centric solutions",
+      "Ensured code quality and best practices through code reviews and automated testing",
+    ],
+  },
+  {
+    id: "bmo1",
+    company: "BMO Financial",
+    position: "Software Technology Analyst",
+    period: "January - April 2021",
+    website: "https://www.bmo.com/",
+    tasks: [
+      "Developed and maintained internal tools and applications",
+      "Implemented new features and bug fixes using Java and Spring Boot",
+      "Collaborated with team members to ensure smooth and efficient development processes",
+      "Participated in agile development practices, including daily stand-ups, sprint planning, and retrospectives",
+    ],
+  },
+  {
+    id: "bmo2",
+    company: "BMO Financial",
+    position: "IT Operations Analyst",
+    period: "May - August 2020",
+    website: "https://www.bmo.com/",
+    tasks: [
+      "Supported the development of web applications using HTML, CSS, and JavaScript",
+      "Assisted in the migration of legacy applications to modern frameworks and libraries",
+      "Collaborated with team members to troubleshoot and resolve technical issues",
+      "Participated in code reviews and contributed to documentation efforts",
+    ],
+  },
+]
+
+const ExperienceItem = ({ experience }) => (
+  <div>
+    <header className="mb-6">
+      <h3 className="text-xl text-[#ccd6f6] font-bold mb-1">
+        {experience.position}
+        <span className="text-[#64ffda] mx-3">@</span>
+        <a
+          href={experience.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#64ffda] hover:underline whitespace-nowrap"
+        >
+          {experience.company}
+        </a>
+      </h3>
+      <p className="text-[#8892b0] mb-3 text-xs">{experience.period}</p>
+    </header>
+    <div>
+      {experience.tasks.map((task, index) => (
+        <p key={index} className="text-[#8892b0] leading-relaxed mb-3">
+          {task}
+        </p>
+      ))}
+    </div>
+  </div>
+)
+
 const Experience = () => {
+  const [currentExperience, setCurrentExperience] = React.useState(
+    experiences[0].id
+  )
+
   return (
     <div
       name="experience"
       className="w-full h-screen bg-[#0a192f] text-[#ccd6f6]"
     >
-      {/* Page Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        {/* Offset the Exerpience Container from Center */}
-        <div className="w-full sm:w-2/3">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
+        <div className="w-full md:w-3/4 xl:w-2/3">
           <p className="text-4xl font-bold mb-8">
-            <span class="text-[#64ffda]">03.</span> Where I've Worked
+            <span className="text-[#64ffda]">03.</span> Where I've Worked
           </p>
-          <div
-            className="flex flex-wrap"
-            x-data="{currentExperience: 'placeholder'}"
-          >
+          <div className="flex flex-wrap">
             <div className="w-full sm:w-1/5 mb-4 sm:mb-0">
-              <div className="flex flex-row sm:flex-col overflow-x-auto">
-                <a
-                  {...{
-                    "x-on:click.prevent": "currentExperience = 'placeholder'",
-                  }}
-                  href="/"
-                  className="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] text-[#8892b0]"
-                >
-                  PlaceHolder Inc.
-                </a>
-                <a
-                  {...{ "x-on:click.prevent": "currentExperience = 'ea'" }}
-                  href="/"
-                  className="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] text-[#8892b0]"
-                >
-                  Electronic Arts (EA)
-                </a>
-                <a
-                  {...{ "x-on:click.prevent": "currentExperience = 'sunlife'" }}
-                  href="/"
-                  className="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] text-[#8892b0]"
-                >
-                  Sun Life
-                </a>
-                <a
-                  {...{ "x-on:click.prevent": "currentExperience = 'bmo1'" }}
-                  href="/"
-                  className="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] text-[#8892b0]"
-                >
-                  BMO Financial
-                </a>
-                <a
-                  {...{ "x-on:click.prevent": "currentExperience = 'bmo2'" }}
-                  href="/"
-                  className="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] text-[#8892b0]"
-                >
-                  BMO Financial
-                </a>
-              </div>
+              <ul>
+                {experiences.map((experience) => (
+                  <li key={experience.id}>
+                    <button
+                      className={`px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-[#8892b0] hover:bg-[#8892b0] hover:bg-opacity-25 hover:text-[#64ffda] focus:outline-none ${
+                        currentExperience === experience.id
+                          ? "font-semibold text-[#64ffda] border-[#64ffda]"
+                          : "text-[#8892b0]"
+                      }`}
+                      onClick={() => setCurrentExperience(experience.id)}
+                    >
+                      {experience.company}
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="w-full sm:w-4/5">
               <div className="px-0 sm:px-6">
-                {/* Experience Item Start*/}
-                <div x-show="currentExperience === 'placeholder'">
-                  <header className="mb-6">
-                    <h3 class="text-xl text-[#ccd6f6] font-bold mb-1">
-                      Software Engineer
-                      <span class="text-[#64ffda] mx-3">@</span>
-                      <a
-                        href="https://placeholder.co/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-[#64ffda] hover:underline"
-                      >
-                        PlaceHolder Inc.
-                      </a>
-                    </h3>
-                    <p class="text-[#8892b0] mb-3 text-xs">
-                      May - September 2022
-                    </p>
-                  </header>
-                  <div>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Designed, implemented and debugged core software
-                      components
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Authored and deployed unit tests and other automated
-                      software tests
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Collaborated with team members to gather requirements for
-                      new/existing features
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Participated in architecture, design and code reviews
-                    </p>
-                  </div>
-                </div>
-                {/* Experience Item End*/}
-                {/* Experience Item Start*/}
-                <div x-show="currentExperience === 'ea' ">
-                  <header className="mb-6">
-                    <h3 class="text-xl text-[#ccd6f6] font-bold mb-1">
-                      Software Quality Engineer
-                      <span class="text-[#64ffda] mx-3">@</span>
-                      <a
-                        href="https://www.ea.com/en-ca"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-[#64ffda] hover:underline"
-                      >
-                        Electronic Arts (EA)
-                      </a>
-                    </h3>
-                    <p class="text-[#8892b0] mb-3 text-xs">
-                      September 2021 - April 2022
-                    </p>
-                  </header>
-                  <div>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Deployed an automated “shelf building” process through a
-                      Jenkins interface to simplify pre-integration testing and
-                      reduce Perforce (P4) errors (merge conflicts, out-of-sync
-                      builds, etc.) that impact testing and milestone delivery
-                      timelines
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Devised a Jenkins pipeline by setting up authentication,
-                      authorization, Slack integration, and job/node
-                      configuration
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Configured a designated “build” machine for the automated
-                      process by setting up an Ubuntu VM using Hyper-V and
-                      installing all required dependencies such as Perforce
-                      (P4), Java, Git, and Jenkins
-                    </p>
-                  </div>
-                </div>
-                {/* Experience Item End*/}
-                {/* Experience Item Start*/}
-                <div x-show="currentExperience === 'sunlife' ">
-                  <header className="mb-6">
-                    <h3 class="text-xl text-[#ccd6f6] font-bold mb-1">
-                      Software Architect
-                      <span class="text-[#64ffda] mx-3">@</span>
-                      <a
-                        href="https://www.sunlife.ca/en/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-[#64ffda] hover:underline"
-                      >
-                        Sun Life
-                      </a>
-                    </h3>
-                    <p class="text-[#8892b0] mb-3 text-xs">
-                      January - August 2021
-                    </p>
-                  </header>
-                  <div>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Prototyped a CRUD Serverless API with AWS Lambda, API
-                      Gateway, and DynamoDB from scratch with less than 0.1%
-                      downtime to serve data to multiple internal applications
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Oversaw the implementation of a custom ServiceNow instance
-                      for multiple regions (Canada, US, Asia), impacting more
-                      than 600 businesss users and stakeholders
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Performed UAT/Regression testing for enhancements and
-                      created Business Requirements and Technical Design
-                      documents
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Maintained and updated more than 1000+ data records in the
-                      Alfabet platform (Enterprise Architecture Management
-                      system) for audit purposes
-                    </p>
-                  </div>
-                </div>
-                {/* Experience Item End*/}
-                {/* Experience Item Start*/}
-                <div x-show="currentExperience === 'bmo1' ">
-                  <header className="mb-6">
-                    <h3 class="text-xl text-[#ccd6f6] font-bold mb-1">
-                      Software Analyst
-                      <span class="text-[#64ffda] mx-3">@</span>
-                      <a
-                        href="https://www.bmo.com/main/about-bmo/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-[#64ffda] hover:underline"
-                      >
-                        BMO Financial
-                      </a>
-                    </h3>
-                    <p class="text-[#8892b0] mb-3 text-xs">
-                      January - April 2020
-                    </p>
-                  </header>
-                  <div>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Managed internal front-end web applications and deployed
-                      time-sensitive content in the Coupa platform using hybrid
-                      Scum/Agile methodology
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Revamped entire front-end UI for the internal Procurement
-                      website, improving functionality, aesthetic appeal and
-                      increasing site traffic by 10%
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Pioneered new custom fields to ensure all pertinent
-                      information was captured in requisitions and invoices in
-                      the Coupa platform
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Developed and implemented numerous intake forms to
-                      streamline data aggregation methods
-                    </p>
-                  </div>
-                </div>
-                {/* Experience Item End*/}
-                {/* Experience Item Start*/}
-                <div x-show="currentExperience === 'bmo2' ">
-                  <header className="mb-6">
-                    <h3 class="text-xl text-[#ccd6f6] font-bold mb-1">
-                      IT Operations Analyst
-                      <span class="text-[#64ffda] mx-3">@</span>
-                      <a
-                        href="https://www.bmo.com/main/about-bmo/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-[#64ffda] hover:underline"
-                      >
-                        BMO Financial
-                      </a>
-                    </h3>
-                    <p class="text-[#8892b0] mb-3 text-xs">
-                      January - April 2019
-                    </p>
-                  </header>
-                  <div>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Developed 300+ post-validation “health check” scripts for
-                      Windows applications in Python, pushing to Bitbucket, and
-                      integrating with Ansible Tower, resulting in an effortless
-                      experience by the end-user
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Architected a scalable proof of concept script using
-                      PowerShell, automating the migration of user-inputted data
-                      from a CSV file to create a “health check” Ansible
-                      package, reducing creation time by 80%
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Built an “Operational Server Readiness” script in
-                      PowerShell to scan multiple pre-production servers,
-                      validate all critical configurations, and clearly
-                      highlight errors, saving more than 2+ developer hours
-                      daily
-                    </p>
-                    <p class="text-[#8892b0] leading-relaxed mb-3">
-                      Pitched and presented potential implementation of several
-                      automation frameworks to the business team and senior
-                      executives, resulting in reduced tech debt by streamlining
-                      report generation tools for data aggregation
-                    </p>
-                  </div>
-                </div>
-                {/* Experience Item End*/}
+                {experiences.map((experience) =>
+                  currentExperience === experience.id ? (
+                    <ExperienceItem
+                      key={experience.id}
+                      experience={experience}
+                    />
+                  ) : null
+                )}
               </div>
             </div>
           </div>

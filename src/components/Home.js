@@ -3,8 +3,8 @@ import { HiArrowNarrowRight } from "react-icons/hi"
 import { Link } from "react-scroll"
 
 export const Home = () => {
-  const companyName = "Hatch"
-  const companyUrl = "https://hatch.co/"
+  const currentCompanyName = "Hatch"
+  const currentCompanyUrl = "https://hatch.co/"
 
   return (
     <div
@@ -23,12 +23,12 @@ export const Home = () => {
           I aspire to impart a wave of positive change across the world, one
           line at a time. Most recently, I was a Software Engineer at{" "}
           <a
-            href={companyUrl}
+            href={currentCompanyUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#64ffda] font-medium no-underline hover:underline"
           >
-            {companyName}
+            {currentCompanyName}
           </a>{" "}
           and a Computer Engineering student at the{" "}
           <a
