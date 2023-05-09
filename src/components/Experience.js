@@ -2,6 +2,18 @@ import React from "react"
 
 const experiences = [
   {
+    id: "hatch",
+    company: "Hatch",
+    position: "Software Engineer",
+    period: "March - May 2023",
+    website: "https://hatch.com/",
+    tasks: [
+      "Developed an Angular breadcrumb component to streamline user navigation, utilizing route traversal, and handling nested routes effectively, improving application usability for over 1000 daily users",
+      "Implemented efficient GraphQL CRUD operations for managing product metadata, streamlining data access and performance",
+      "Boosted application reliability and maintainability by expanding Jest test coverage from 86% to 98%, through the creation and execution of numerous comprehensive unit tests",
+    ],
+  },
+  {
     id: "placeholder",
     company: "Placeholder",
     position: "Software Engineer",
