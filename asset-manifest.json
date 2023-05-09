@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eb14f466.css",
-    "main.js": "/static/js/main.da0c9f1a.js",
+    "main.js": "/static/js/main.3320dc27.js",
     "static/media/text-editor.png": "/static/media/text-editor.9f3f81307c678048e50f.png",
     "static/media/sp-resume-S2023.pdf": "/static/media/sp-resume-S2023.2d604c7cc11d09f63833.pdf",
     "static/media/slack-bot.png": "/static/media/slack-bot.bdc8dc71e9d2d3112cfc.png",
@@ -10,10 +10,10 @@
     "static/media/sovan-logo.png": "/static/media/sovan-logo.b89c47152239e2341153.png",
     "index.html": "/index.html",
     "main.eb14f466.css.map": "/static/css/main.eb14f466.css.map",
-    "main.da0c9f1a.js.map": "/static/js/main.da0c9f1a.js.map"
+    "main.3320dc27.js.map": "/static/js/main.3320dc27.js.map"
   },
   "entrypoints": [
     "static/css/main.eb14f466.css",
-    "static/js/main.da0c9f1a.js"
+    "static/js/main.3320dc27.js"
   ]
 }
