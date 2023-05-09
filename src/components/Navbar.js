@@ -78,7 +78,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             download="sovan-patnayak-resume.pdf"
           >
-            <span className="text-[#64ffda]">06.</span> Download Resume
+            <span className="text-[#64ffda]">06.</span> Resume
           </a>
         </li>
       </ul>
