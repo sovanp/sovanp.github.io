@@ -1,6 +1,8 @@
 import React from "react"
 
 const Contact = () => {
+  const email = "sovanpatnayak@gmail.com"
+
   return (
     <div
       name="contact"
@@ -13,10 +15,10 @@ const Contact = () => {
       >
         <div className="pb-8">
           <p className="text-4xl font-bold text-[#ccd6f6]">
-            <span class="text-[#64ffda]">05.</span> Contact
+            <span className="text-[#64ffda]">05.</span> Contact
           </p>
           <p className="text-[#8892b0] py-4">
-            Submit the form below or shoot me an email - sovanpatnayak@gmail.com
+            Submit the form below or shoot me an email - {email}
           </p>
         </div>
         <input
@@ -24,18 +26,21 @@ const Contact = () => {
           type="text"
           placeholder="Name"
           name="name"
+          required
         />
         <input
           className="my-4 p-2 bg-[#ccd6f6]"
           type="email"
           placeholder="Email"
           name="email"
+          required
         />
         <textarea
           className="bg-[#ccd6f6] p-2"
           name="message"
           rows="10"
           placeholder="Message"
+          required
         ></textarea>
         <button className="text-[#ccd6f6] border-2 rounded-md hover:bg-[#64ffda] hover:border-[#64ffda] px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
