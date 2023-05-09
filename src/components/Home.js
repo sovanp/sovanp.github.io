@@ -30,7 +30,7 @@ export const Home = () => {
           >
             {currentCompanyName}
           </a>{" "}
-          and a Computer Engineering student at the{" "}
+          and I'm currently a Computer Engineering student at the{" "}
           <a
             href="https://uwaterloo.ca/"
             target="_blank"
